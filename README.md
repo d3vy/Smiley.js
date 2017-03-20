@@ -1,10 +1,10 @@
-Smiley.js
-=========
+# Smiley.js
 
 Smiley.js is a script for rotating smiley faces on your site to the correct viewing angle :D. The happiest script around.
 
-Friendly Installation
-=====================
+> This project is based on [GeorgePhillips/Smiley.js](https://github.com/GeorgePhillips/Smiley.js)
+
+## Friendly Installation
 
 Add the Smiley.css to the head: `<link rel="stylesheet" href="smileys.css">`
 
