@@ -72,7 +72,7 @@ checkForSmiley = (html, smiley, isReverse)->
 
 prepareSmiley = (smiley, isReverse)->
   html = '<span class="smiley-wrapper">' +
-      '<span class="smiley' + (isReverse ? 'smiley-reverse' : '') + '">'
+      '<span class="smiley' + (if isReverse then ' smiley-reverse' else '') + '">'
 
   for i in [0...smiley.length]
     if smiley[i] in smileParts

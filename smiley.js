@@ -77,9 +77,7 @@
 
   prepareSmiley = function(smiley, isReverse) {
     var html, m, ref2, ref3;
-    html = '<span class="smiley-wrapper">' + '<span class="smiley' + (isReverse != null ? isReverse : {
-      'smiley-reverse': ''
-    }) + '">';
+    html = '<span class="smiley-wrapper">' + '<span class="smiley' + (isReverse ? ' smiley-reverse' : '') + '">';
     for (i = m = 0, ref2 = smiley.length; 0 <= ref2 ? m < ref2 : m > ref2; i = 0 <= ref2 ? ++m : --m) {
       if (ref3 = smiley[i], indexOf.call(smileParts, ref3) >= 0) {
         html += '<span class="' + smileParts[smiley[i]] + '">' + smiley[i] + '</span>';
@@ -116,4 +114,4 @@
 
 }).call(this);
 
-//# sourceMappingURL=smileys.js.map
+//# sourceMappingURL=smiley.js.map

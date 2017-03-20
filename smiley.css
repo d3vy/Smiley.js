@@ -1,0 +1,67 @@
+.smiley-wrapper {
+  display: inline-block; }
+
+.smiley {
+  cursor: pointer;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 4%;
+  white-space: nowrap;
+  -webkit-rotation-point: 50% 50%;
+  -webkit-transition: all 1s ease, color 0.5s;
+  -moz-transition: all 1s ease, color 0.5s;
+  -o-transition: all 1s ease, color 0.5s;
+  transition: all 1s ease, color 0.5s; }
+  .smiley .middle-mouth,
+  .smiley .high-mouth,
+  .smiley .low-mouth,
+  .smiley .nose {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    -webkit-rotation-point: 75% 50%;
+    -webkit-transition: all 1s ease, color 0s;
+    -moz-transition: all 1s ease, color 0s;
+    -o-transition: all 1s ease, color 0s;
+    transition: all 1s ease, color 0s; }
+  .smiley.active {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+    .smiley.active .low-mouth {
+      display: inline-block;
+      -webkit-transform: translate(0px, -8%);
+      -moz-transform: translate(0px, -8%);
+      -ms-transform: translate(0px, -8%);
+      -o-transform: translate(0px, -8%);
+      transform: translate(0px, -8%); }
+    .smiley.active .middle-mouth {
+      display: inline-block;
+      -webkit-transform: translate(0px, 8%);
+      -moz-transform: translate(0px, 8%);
+      -ms-transform: translate(0px, 8%);
+      -o-transform: translate(0px, 8%);
+      transform: translate(0px, 8%); }
+    .smiley.active .high-mouth {
+      display: inline-block;
+      -webkit-transform: translate(0px, 25%);
+      -moz-transform: translate(0px, 25%);
+      -ms-transform: translate(0px, 25%);
+      -o-transform: translate(0px, 25%);
+      transform: translate(0px, 25%); }
+
+.smiley-reverse {
+  left: -4%; }
+  .smiley-reverse.active {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+
+/*# sourceMappingURL=smiley.css.map */
